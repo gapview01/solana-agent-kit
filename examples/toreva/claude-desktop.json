@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "toreva": {
+      "command": "npx",
+      "args": ["-y", "@toreva/cdx-mcp"],
+      "env": {
+        "TOREVA_GATEWAY_URL": "https://gateway.stub.toreva.dev",
+        "TOREVA_TOKEN_FILE": "~/.config/toreva/credentials.json"
+      }
+    }
+  }
+}
