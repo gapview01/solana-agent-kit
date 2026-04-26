@@ -25,6 +25,37 @@ Anyone - whether an SF-based AI researcher or a crypto-native builder - can brin
 [![Run on Repl.it](https://replit.com/badge/github/sendaifun/solana-agent-kit)](https://replit.com/@sendaifun/Solana-Agent-Kit)
 > Replit template created by [Arpit Singh](https://github.com/The-x-35)
 
+
+## Toreva CLI (DEC-001 C7 Kit Install)
+
+This repository now ships a standalone **`toreva`** installer CLI for MCP-aware clients.
+
+### Install
+
+```bash
+npx toreva init --client=claude-desktop
+```
+
+### First run
+
+```bash
+# 1) Install Toreva connector into your MCP-aware client config
+toreva init --client=claude-desktop
+
+# 2) Start token flow (gateway endpoint is currently stubbed)
+toreva login --gateway-url=https://gateway.stub.toreva.dev
+
+# 3) Verify install + token + first MCP call
+toreva doctor --client=claude-desktop
+```
+
+Supported clients:
+- `claude-desktop`
+- `openclaw`
+- `cursor`
+
+Client examples live under [`examples/toreva/`](examples/toreva).
+
 ## 🔧 Core Blockchain Features
 
 - **Token Operations**
